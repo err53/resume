@@ -11,8 +11,15 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume.tex
-
-      - name: Commit to GitHub
-        uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Enable Git-LFS
+        run: git lfs install
+          
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Update PDF" -a
+      
+      - name: Push files
+        run: git push
