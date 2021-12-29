@@ -8,5 +8,6 @@
       "changelogPath": "CHANGELOG.md",
       "versioning": "default"
     }
-  }
+  },
+  "bootstrap-sha": "f819056bdf7ad3431260d132e914cbc6494e36cb"
 }
