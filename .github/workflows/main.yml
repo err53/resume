@@ -11,8 +11,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+      
+      - name: Checkout Awesome-CV
+        uses: actions/checkout@v2
         with:
-          submodules: true
+          repository: posquit0/Awesome-CV
+          path: Awesome-CV
 
       - name: Compile
         run: make
