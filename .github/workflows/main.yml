@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - main
+name: release-please
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    container: thomasweise/texlive
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Checkout Awesome-CV
+        uses: actions/checkout@v2
+        with:
+          repository: posquit0/Awesome-CV
+          path: Awesome-CV
+
+      - name: Compile
+        run: make
+        
+      - uses: GoogleCloudPlatform/release-please-action@v2
+        with:
+          command: manifest
