@@ -22,4 +22,7 @@ jobs:
         
       - uses: GoogleCloudPlatform/release-please-action@v2
         with:
-          command: manifest
+          release-type: simple
+          package-name: resume
+          path: out
+          
