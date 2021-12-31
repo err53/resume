@@ -20,9 +20,4 @@ jobs:
       - name: Compile
         run: make
         
-      - uses: GoogleCloudPlatform/release-please-action@v2
-        with:
-          release-type: simple
-          package-name: resume
-          path: out
-          
+      
