@@ -1,0 +1,5 @@
+I've recently been getting into the hobby of custom mechanical keyboards.
+Some of the builds I've seen online are incredibly impressive, but I thought, if I were to build a custom keyboard, I'd like to have a hand in the design of ALL the parts (or at least the ones that can be reasonably manufactured without injection molding).
+Given that I've had previous experience with 3D modelling and 3D printing, I think this is pretty feasible and cost-effective.
+Some of my friends have had the same thoughts, so we've been brainstorming ideas for a custom PCB and case design.
+Thus, if I were to open a store, I most likely be running a group buy for the case and PCB, if we end up with significant interest. Perhaps I'd sell related parts like keyswitches or keycaps down the line, but I would prioritize making and selling more PCBs and cases, as the only reason I'd be doing this is out of passion for design and the hobby itself, not profit.
