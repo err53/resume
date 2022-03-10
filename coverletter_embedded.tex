@@ -19,7 +19,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letter]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -84,18 +84,18 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {Tucows Recruitment Team}
-  {Tucows}
+  {Nokia Recruitment Team}
+  {Nokia}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Application for Jr. Software Developer}
+\lettertitle{Application for MXG Embedded C/C++ Developer Co-op}
 % How the letter is opened
 \letteropening{To whom it may concern,}
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
-\letterenclosure[Attached]{Résumé}
+% \letterenclosure[Attached]{Résumé}
 
 
 %-------------------------------------------------------------------------------
@@ -138,16 +138,15 @@ and president of the 3D printing club.
 Furthermore, I have worked on projects with small teams, 
 having gone to more than 10 hackathons since the beginning of high school.
 
-\lettersection{Why {companyname}?}
-
-I have experience working on full-stack applications,
-which I believe lines up well with the requirements of this position.
-I have previously heard of Tucows when looking into registering my own domain,
-and think that working here would be particularly interesting.
-The fully-remote nature of the position was also attractive,
-especially during the continued pandemic restrictions.
-% I have experience working on full-stack applications, 
-% and the specific request for full-stack developers in the job posting intrigued me.
+\lettersection{Why Nokia?}
+The tech stack listed in the position interested me.
+I've used C++ previously on personal projects and in competitive programming,
+but I have never had an opportunity to use it in a professional manner.
+I've been learning containerization on my own time, and 
+I'm interested in the use of Docker and K8S in this position.
+I have worked with the Kubernetes stack, as well as Docker/Docker Compose
+while working on my home servers, and I would love to apply my experience
+towards an impactful project.
 % The digital-first aspect of the position was also significant for me,
 % especially during these uncertain times.
 % The co-op I was working at before had an agile, fast-moving, and chaotic development cycle, 
@@ -165,22 +164,27 @@ especially during the continued pandemic restrictions.
 % change this to focus on a trait the job likes
 % vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 % I also want do work that is impactful for others, 
-% and Vidyard's mission to build the future of {area} aligns with my drive to make a difference.
+% and Vidyard's mission to build the future of video delivery aligns with my drive to make a difference.
 % ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 \lettersection{Why Me?}
-I've had 2 years of working experience with full-stack web development, 
+I've had 2 years of working experience with full-stack web development
 using modern frontend stacks, as well as backend database and API experience.
-Specifically, I worked on sites built with Gatsby, 
-a framework dependent on GraphQL queries for static site generation,
-as well as RedwoodJS, a Rails-like app that is also highly dependent on GraphQL.
-For the database of the latter app, I learned how to use Prisma, an ORM with excellent developer ergonomics,
-and how to connect it to a PostgreSQL DB.
-At this position, I've also wrote serverless microservices using Firebase Functions, 
-and utilized services provided by PaaS providers, such as AWS's Textract and S3.
-While I have not used Python to develop microservices in a professional manner,
-I have had experience working with the language through both 3 years of academic courses,
-and personal use.
+While I have not used C++ at a job thus far, 
+I have significant experience in the language from my 3 years of competitive programming experience.
+I have competed in CCC senior during Grades 11 and 12 in highschool,
+using exclusively C++.
+You can look over either some of the solutions listed on my Github, 
+or my DMOJ profile:
+\url{https://dmoj.ca/user/jhthenerd}
+
+% Specifically, I worked on sites built with Gatsby, 
+% a framework dependent on GraphQL queries for static site generation,
+% as well as RedwoodJS, a Rails-like app that is also highly dependent on GraphQL.
+% For the database of the latter app, I learned how to use Prisma, an ORM with excellent developer ergonomics,
+% and how to connect it to a PostgreSQL DB.
+% At this position, I've also wrote serverless microservices using Firebase Functions, 
+% and utilized services provided by PaaS providers, such as AWS's Textract and S3.
 % I also have expeience with building authentication, both in personal projects with Firebase Auth,
 % as well as at TakingITGlobal, using Auth0.
 % I've also had interest in the field of infosec, have attended CTFs in the past, 
@@ -188,21 +192,21 @@ and personal use.
 % Specifically, in the process of building one of the projects I've worked on, FraserVotes,
 % I was responsible for analyzing our application's threat model and implementing the asymmetric encryption
 % used in it.
-% Furthermore, I have significant experience with Linux and modern enterprise infrastructure,
-% through my interest in homelabbing and open-source software.
+As discussed previously, I have significant experience with Linux and modern enterprise infrastructure,
+through my interest in homelabbing and open-source software.
+I've experimented with containerization,
+and am currently running a hyperconverged media and file server,
+with K3S handling application hosting and ZFS handling storage.
 % I've also contributed to open-source, and have even released an accessibility tool to the community 
 % as part of my work at my previous employment.
-
 % Given these skills and experiences, I believe I am well suited to the Software Developer/Hacker Co-op at Red Canari.
-As I have had great interest in infrastructure, 
-I spearheaded my team's effort at TakingITGlobal to utilize DevOps tools such as Jest,
-which has helped to improve developer experience and reduce bugs.
+
 % I was also tasked with working on unfamiliar infrastructure and developing with cutting-edge stacks,
 % so I believe that I will be able to learn and adapt to the challenges that this position will provide.
 % Furthermore, I have significant experience with Linux and modern enterprise infrastructure,
 % through my interest in homelabbing and open-source software.
-% Evidently, I have experience in many of the prerequisite areas for this position,
-% and believe I would be a good fit for this Software Developer position.
+
+
 % Given these my existing passion for this subject and relevant experience,
 % I believe I will prove to be an excellent asset to the team at CGI.
 % change this to focus on the job requirements and nice-to-haves
@@ -220,8 +224,8 @@ which has helped to improve developer experience and reduce bugs.
 
 Thank you for your time and consideration.
 I'm excited for this opportunity to apply my experience and 
-personal interest in the field of software to this position.
-I look forward to speaking with you about this opportunity.
+personal interest in infrastructure and containerization
+to this position. I look forward to speaking with you about this opportunity.
 
 \end{cvletter}
 
