@@ -19,7 +19,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letter]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -84,18 +84,18 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {Tucows Recruitment Team}
-  {Tucows}
+  {RBC Recruitment Team}
+  {RBC}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Application for Jr. Software Developer}
+\lettertitle{Application for Software Engineer Intern/Co-op}
 % How the letter is opened
 \letteropening{To whom it may concern,}
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
-\letterenclosure[Attached]{Résumé}
+% \letterenclosure[Attached]{Résumé}
 
 
 %-------------------------------------------------------------------------------
@@ -138,16 +138,34 @@ and president of the 3D printing club.
 Furthermore, I have worked on projects with small teams, 
 having gone to more than 10 hackathons since the beginning of high school.
 
-\lettersection{Why {companyname}?}
-
-I have experience working on full-stack applications,
-which I believe lines up well with the requirements of this position.
-I have previously heard of Tucows when looking into registering my own domain,
-and think that working here would be particularly interesting.
-The fully-remote nature of the position was also attractive,
-especially during the continued pandemic restrictions.
-% I have experience working on full-stack applications, 
-% and the specific request for full-stack developers in the job posting intrigued me.
+\lettersection{Why RBC?}
+I have an interest in machine learning and it's applications,
+and this position specifically intrigues me.
+While I have not taken any formal machine learning courses yet,
+I have explored the topic on my own time,
+exploring some of the content in Google's Machine Learning Crash Course,
+and helping to host a set of lectures at my former high school's CS club
+during my grade 12 year.
+I hope that this position will help me develop my skill in this area,
+and connect with peers who have similar interests and are also driven to do great things.
+% I have had an interest in enterprise infrastructure since starting my homelab,
+% and working at Purolator could allow me to apply some of my interests to a working environment.
+% My previous position was at a relatively small company, and I hope that Purolator
+% would allow me to gain experience working at a larger company with more structure.
+% I am excited about the VR/AR space, so the listing was particularly interesting for me.
+% After learning more about the company, I'm particularly drawn in by the startup-like working environment.
+% As a full stack developer, I am a strong believer in tightly integrated software stacks, 
+% and the request for a backend dev who also understands the needs of the frontend team also resonates with me.
+% The diverse tech stack listed in the position interested me.
+% I have had experience for many of the frameworks and web platforms listed in the listing requirements,
+% and others that I have interest in learning.
+% For example, I've been learning containerization on my own time, and 
+% I'm interested in the use of Docker and K8S in this position.
+% I have worked with the Kubernetes stack, as well as Docker/Docker Compose
+% while working on my home servers, and I would love to apply my experience
+% towards an impactful project.
+% The specific application of these tools in cybersecurity is also interesting for me personally,
+% as I have an interest in the field, stemming from my participation in CTFs in the past.
 % The digital-first aspect of the position was also significant for me,
 % especially during these uncertain times.
 % The co-op I was working at before had an agile, fast-moving, and chaotic development cycle, 
@@ -165,22 +183,34 @@ especially during the continued pandemic restrictions.
 % change this to focus on a trait the job likes
 % vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 % I also want do work that is impactful for others, 
-% and Vidyard's mission to build the future of {area} aligns with my drive to make a difference.
+% and Vidyard's mission to build the future of video delivery aligns with my drive to make a difference.
 % ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 \lettersection{Why Me?}
-I've had 2 years of working experience with full-stack web development, 
+I've had 2 years of working experience with full-stack web development
 using modern frontend stacks, as well as backend database and API experience.
-Specifically, I worked on sites built with Gatsby, 
-a framework dependent on GraphQL queries for static site generation,
-as well as RedwoodJS, a Rails-like app that is also highly dependent on GraphQL.
-For the database of the latter app, I learned how to use Prisma, an ORM with excellent developer ergonomics,
-and how to connect it to a PostgreSQL DB.
-At this position, I've also wrote serverless microservices using Firebase Functions, 
-and utilized services provided by PaaS providers, such as AWS's Textract and S3.
-While I have not used Python to develop microservices in a professional manner,
-I have had experience working with the language through both 3 years of academic courses,
-and personal use.
+Specifically, at my previous employer, TakingITGlobal,
+I worked closely with a team of 2 other students to build React-based applications,
+their respective backends, and the necessary DevOps tooling to maintain them.
+During this position, I was tasked with working on unfamiliar infrastructure and developing with cutting-edge stacks,
+so I believe that I will be able to learn and adapt to the challenges this ML internship will provide.
+I have used Python extensively for school and personal projects, and have also used Java, albeit to a lesser degree.
+I also excelled in my first semester's math courses, most notable being my perfect GPA in the linear algebra course.
+% I was responsible for rebuilding the RisingYouth site with Gatsby,
+% a React-based static site generator, rewriting the backend as serverless Firebase functions,
+% and utilized automated deployment and testing frameworks
+% such as Github Actions and Jest.
+% Specifically, I worked on sites built with Gatsby and RedwoodJS, 
+% both of which are utilize React for page rendering.
+% Specifically, I worked on sites built with Gatsby, 
+% a framework dependent on GraphQL queries for static site generation,
+% as well as RedwoodJS, a Rails-like app that is also highly dependent on GraphQL.
+% At this position, I've also wrote serverless RESTful microservices using Firebase Functions, 
+% and utilized services provided by PaaS providers, such as AWS's Textract and S3.
+% I also have experience working with both relational and NoSQL-like databases,
+% having used Firebase Firestore and PostgreSQL, using both raw queries and ORMs like Prisma.
+% While I don't use Java at my current position, I have taken the AP Computer Science 1 exam, written in Java,
+% and believe that I will be able to adapt and learn the stack needed for this position.
 % I also have expeience with building authentication, both in personal projects with Firebase Auth,
 % as well as at TakingITGlobal, using Auth0.
 % I've also had interest in the field of infosec, have attended CTFs in the past, 
@@ -188,21 +218,24 @@ and personal use.
 % Specifically, in the process of building one of the projects I've worked on, FraserVotes,
 % I was responsible for analyzing our application's threat model and implementing the asymmetric encryption
 % used in it.
-% Furthermore, I have significant experience with Linux and modern enterprise infrastructure,
+% I have used Python for both school and personal projects for the past 3 years,
+% and have even led workshops teaching others the basics of Python:
+% \url{https://github.com/err53/ocac-python-club}
+% As discussed previously, I have significant experience with Linux and modern enterprise infrastructure,
 % through my interest in homelabbing and open-source software.
+% I've experimented with containerization,
+% and am currently running a hyperconverged media and file server,
+% with K3S handling application hosting and ZFS handling storage.
 % I've also contributed to open-source, and have even released an accessibility tool to the community 
 % as part of my work at my previous employment.
-
 % Given these skills and experiences, I believe I am well suited to the Software Developer/Hacker Co-op at Red Canari.
-As I have had great interest in infrastructure, 
-I spearheaded my team's effort at TakingITGlobal to utilize DevOps tools such as Jest,
-which has helped to improve developer experience and reduce bugs.
+
 % I was also tasked with working on unfamiliar infrastructure and developing with cutting-edge stacks,
 % so I believe that I will be able to learn and adapt to the challenges that this position will provide.
 % Furthermore, I have significant experience with Linux and modern enterprise infrastructure,
 % through my interest in homelabbing and open-source software.
-% Evidently, I have experience in many of the prerequisite areas for this position,
-% and believe I would be a good fit for this Software Developer position.
+
+
 % Given these my existing passion for this subject and relevant experience,
 % I believe I will prove to be an excellent asset to the team at CGI.
 % change this to focus on the job requirements and nice-to-haves
@@ -220,8 +253,8 @@ which has helped to improve developer experience and reduce bugs.
 
 Thank you for your time and consideration.
 I'm excited for this opportunity to apply my experience and 
-personal interest in the field of software to this position.
-I look forward to speaking with you about this opportunity.
+personal interest in backend and fintech
+to this position. I look forward to speaking with you about this opportunity.
 
 \end{cvletter}
 
