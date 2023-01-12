@@ -1,0 +1,81 @@
+\documentclass[11pt, letterpaper, sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{black}
+
+\usepackage{lipsum}
+
+\usepackage[scale=0.75]{geometry}
+
+\input{../../config.tex}
+\title{Cover Letter}
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+\begin{document}
+
+\clearpage
+
+\newcommand{\positionname}{Software Engineer Internship} % Position name
+\newcommand{\companyname}{DoorDash} % Company name
+
+\recipient{HR Department}{\companyname{}} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{Résumé} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+I am pleased to be applying for the \positionname{} position at \companyname{}.
+My experience with developing full-stack web applications,
+with a focus on the back-end,
+and continued drive to improve the processes I work with matches well with your requirements.
+% TODO: ADD SOFT SKILLS THAT MATCH REQUIREMENTS
+In addition, my background of working in small development teams
+has taught me best practices in Agile,
+and has provided me the skills necessary to thrive in a fast-paced environment.
+
+At my previous position in New Babel,
+I developed the company's flagship product, Pearl, a centralized database ID translation system.
+I was responsible for the entire development process,
+including research, design, implementation, and deployment.
+I gained experience with AWS cloud architecture
+and deployment automation tools such as Terraform,
+and I used these skills to deploy a large, 
+highly scalable multi-tenant SaaS REST API.
+
+Furthermore, I have experience with testing and monitoring existing infrastructure.
+At TakingITGlobal, I spearheaded an initiative to implement automated CI/CD systems
+into the new landing page we were building,
+as well as retrofitting old repositories with automated testing.
+Similarly, I have deployed monitoring tools at home,
+both for hardware I'm running in my homelab,
+as well as the various smart home devices I manage through Home Assistant.
+
+% Ending paragraph
+Thank you for taking the time to review my application.
+I am passionate about the work your company does and would be honored to be a part of it.
+I look forward to discussing this opportunity with you further,
+and learning more about the position.
+
+\makeletterclosing % Print letter signature
+
+\newpage
+
+\end{document}
