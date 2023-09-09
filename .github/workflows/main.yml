@@ -13,6 +13,6 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          name: Resume
+          name: Latest
           tag_name: latest
           files: resume.pdf
