@@ -1,7 +1,13 @@
 name: Build LaTeX document
 on: [push]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  build_latex:
+  build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
