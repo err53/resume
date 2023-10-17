@@ -1,5 +1,7 @@
 # My Resume / CV / Cover Letter
 
+https://err53.github.io/resume/resume.pdf
+
 Ideas:
 - Semver releases
   - major: new/removed work experience
