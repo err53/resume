@@ -1,0 +1,75 @@
+\documentclass[11pt, letterpaper, sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{black}
+
+\usepackage{lipsum}
+
+\usepackage[scale=0.75]{geometry}
+
+\input{../../config.tex}
+\title{Cover Letter}
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+\begin{document}
+
+\clearpage
+
+\newcommand{\positionname}{Software Developer Intern} % Position name
+\newcommand{\companyname}{Konrad Group} % Company name
+
+\recipient{Hiring Manager}{\companyname{}} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely,} % Closing phrase
+\enclosure[Attached]{Resume} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+I am writing to express my interest in the Software Developer Intern position at Konrad, as advertised.
+Currently a Computer Science Co-op student at McMaster University with a 4.0 GPA,
+my academic and professional experiences have equipped me with a solid foundation in both front end and back end development,
+aligning perfectly with the requirements of this role.
+
+During my internships at Manulife, New Babel, and TakingITGlobal,
+I have honed my skills in various technologies including HTML/CSS/JavaScript, React, Docker, and Kubernetes.
+My work has consistently contributed to significant improvements in project outcomes,
+such as enhancing test coverage by over 25\% at Manulife
+and increasing site performance by 800\% at TakingITGlobal.
+My ability to work collaboratively in a team has been a key aspect of my success,
+as demonstrated by my involvement in Agile development projects and my proactive communication in cross-functional teams.
+
+I am particularly excited about the opportunity at Konrad because of the focus on both consumer and enterprise applications.
+The role aligns with my passion for improving software development workflows/processes
+and my commitment to writing maintainable, testable, and performant software.
+Additionally, the prospect of working under a mentor
+and being part of a world-class team is an ideal platform for me to both contribute to and learn from.
+
+I am enthusiastic about the possibility of joining Konrad and believe that my technical skills,
+combined with my strong interpersonal skills and proactive nature, make me a perfect fit for this position.
+I look forward to the possibility of discussing my application with you in more detail.
+
+Thank you for considering my application.
+I am eager to bring my passion for software development to Konrad and contribute to the success of your team.
+
+\makeletterclosing % Print letter signature
+
+\newpage
+
+\end{document}

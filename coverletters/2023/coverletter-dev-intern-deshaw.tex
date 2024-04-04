@@ -1,0 +1,70 @@
+\documentclass[11pt, letterpaper, sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{black}
+
+\usepackage{lipsum}
+
+\usepackage[scale=0.75]{geometry}
+
+\input{../../config.tex}
+\title{Cover Letter}
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+\begin{document}
+
+\clearpage
+
+\newcommand{\positionname}{Software Developer Intern} % Position name
+\newcommand{\companyname}{D. E. Shaw Group} % Company name
+
+\recipient{Hiring Manager}{\companyname{}} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely,} % Closing phrase
+\enclosure[Attached]{Resume} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+I am writing to apply for the Software Developer Intern position
+in the Quantitative Strategies team at the D. E. Shaw group for Summer 2024.
+As a Computer Science major at McMaster University,
+I have consistently excelled in my coursework,
+maintaining a 4.0 GPA and earning recognition for my academic excellence.
+
+My technical acumen, honed through rigorous academic challenges and practical experiences,
+aligns well with the dynamic environment at your firm.
+In my previous internships, such as my role at Manulife,
+I not only developed testing frameworks but also played a key role in enhancing global infrastructure visibility.
+My project leadership at New Babel and efficiency improvements at TakingITGlobal showcase my ability to drive technical projects to success.
+
+At the D. E. Shaw group, I am excited about the prospect
+of applying my deep understanding of programming languages like
+C/C++, JavaScript, Python, and tools such as React, Docker, Kubernetes, and Terraform.
+I am particularly keen on utilizing these skills in developing tools for financial analysis and automated trading,
+areas where I see significant scope for innovation and impact.
+
+I look forward to the opportunity to discuss how my academic achievements and technical skills
+would be beneficial to your team. Thank you for considering my application.
+
+\makeletterclosing % Print letter signature
+
+\newpage
+
+\end{document}
