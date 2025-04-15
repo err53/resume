@@ -392,3 +392,6 @@ $RECYCLE.BIN/
 
 # ignore pdfs
 *.pdf
+
+# ignore all files in the customized_resumes directory
+customized_resumes/*

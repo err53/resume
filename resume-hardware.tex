@@ -9,17 +9,17 @@
 % for luatex and xetex, do not use inputenc and fontenc
 % see https://tex.stackexchange.com/a/496643
 \ifxetexorluatex
-  \usepackage{fontspec}
-  \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX}
-  \setmainfont{Latin Modern Roman}
-  \setsansfont{Latin Modern Sans}
-  \setmonofont{Latin Modern Mono}
-  \setmathfont{Latin Modern Math}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+\setmathfont{Latin Modern Math}
 \else
-  \usepackage[utf8]{inputenc}
-  \usepackage[T1]{fontenc}
-  \usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \fi
 
 \usepackage[scale=0.90]{geometry}
@@ -32,102 +32,166 @@
 
 \makecvtitle
 
-
 \vspace{-3em}
 
 \section{Education}
-\cventry{2021 -- 2025}{Computer Science Co-op}{McMaster University}{Hamilton, Ontario, Canada}{4.0 GPA}{
-	Bachelor of Applied Science
-	\begin{itemize}
-		% \item{Received Faculty of Engineering Achievement Award for Fall 2021 term}
-		\item{Received Provost's Honour Roll, Deans' Honour List - (Winter 2022)}
-		      % \item{Completed CS 2DB3: Databases - 4.0}
-		      % \item Completed CS 2C03: Data Structures and Algorithms - 4.0
-		      % \item Completed CS 2ME3: Intro to Software Development - 4.0
-		      % \item Completed CS 2GA3: Computer Architecture - 4.0
-		\item Completed courses in Computer Architecture (4.0), Operating Systems (4.0), Databases (4.0), Data Structures and Algorithms (4.0)
-		\item{DeltaHacks VP of Tech - (Nov 2022 -- Present)}
-		\item{McMaster Competitive Programming ICPC Competitor (Spring 2023)}
-	\end{itemize}
+\cventry{2021 -- 2025}{Computer Science Co-op}{McMaster
+University}{Hamilton, Ontario, Canada}{4.0 GPA}{
+  Bachelor of Applied Science
+  \begin{itemize}
+      % \item{Received Faculty of Engineering Achievement Award for
+      % Fall 2021 term}
+    \item Received Provost's Honour Roll (2021-2022), Deans' Honour
+      List (2021-2024)
+    \item Completed courses in
+      Databases,
+      Computer Architecture,
+      Data Structures and Algorithms,
+      Software Development (OOP and Design Patterns),
+      Information Security,
+      Operating Systems,
+      Syntax-Based Tools and Compilers
+      Data Mining,
+      Machine Learning,
+      Natural Language Processing.
+    \item{DeltaHacks Tech Exec, VP of Tech - (Nov 2022 -- Present)}
+    \item{McMaster Competitive Programming ICPC Competitor (Spring 2023)}
+  \end{itemize}
 }
 
 \section{Experience}
-\cventry{May 2023 -- Sept 2023}{Cloud Engineering Intern}{Manulife}{Waterloo, Ontario, Canada}{}{
-	\begin{itemize}
-		\item{Developed new testing framework addons for Terraform in \textbf{Go}, improving test coverage by over \textbf{25\%}}
-		\item{Scaffolded ServiceNOW Terraform API using \textbf{Azure, Kubernetes, and Python}, improving global infrastructure visibility by \textbf{100\%}}
-		\item{Collaborated across internal Cloud Catalog and K8S Catalog teams using \textbf{Jira and Confluence}}
-		\item{Introduced proof-of-concept use of \textbf{Docker containers} to improve Cloud Catalog contribution process}
-	\end{itemize}
+\cventry{Jun 2023 -- Present}{Founder, CTO}{SalesBop}{Hamilton,
+Ontario, Canada}{}{
+  \url{https://www.salesbop.io}
+  \begin{itemize}
+    \item Architected a full-stack application for \textbf{LLM-driven
+      sales call analysis} using \textbf{React and Python}.
+    \item Designed a \textbf{serverless, scalable infrastructure}
+      with \textbf{Modal, Vercel, and PlanetScale}, integrating
+      queues for reliable feedback generation.
+    \item Mentored a co-founder on \textbf{React/JS development} and
+      collaborated with stakeholders to define the product roadmap
+      and prioritize features.
+      % \item Led backend integration efforts post-acquisition to ensure
+      %   seamless transition and continued performance.
+  \end{itemize}
 }
-\cventry{May 2022 -- Sept 2022}{Software Engineer}{New Babel}{Toronto, Ontario, Canada}{}{
-	\begin{itemize}
-		\item{Spearheaded development of new product using \textbf{Agile} development paradigm and serverless technologies}
-		      % \item{Performed research and made executive decisions about new technology stack and architecture}
-		\item{Used industry-standard cloud architecture tools to deploy highly scalable \textbf{multi-tenant SaaS REST API}}
-		\item{Automated unit tests, provisioning, and deployment process using CI/CD tools}
-		\item{Deliberated technical details with \textbf{Fortune 500} clients}
-	\end{itemize}
+\cventry{May 2024 -- Sept 2024}{Full Stack
+Developer}{Grapl}{Hamilton, Ontario, Canada}{}{
+  \begin{itemize}
+    \item Delivered a scalable full-stack inventory app with
+      \textbf{React (Next.js)}, \textbf{PostgreSQL}, and
+      \textbf{tRPC}, enhancing product functionality.
+    \item Built a frame generation service using \textbf{Python} and
+      \textbf{AWS Lambda}, boosting product capabilities.
+    \item Streamlined deployment pipelines with \textbf{GitHub
+      Actions} CI/CD and \textbf{Terraform}-based IaC, cutting
+      deployment time by \textbf{50\%}.
+  \end{itemize}
 }
-\cventry{Apr 2020 -- May 2022}{Software Architect}{TakingITGlobal}{Toronto, Ontario, Canada}{}{
-	\begin{itemize}
-		\item{Used static site generation to increase site performance by over \textbf{800\%}}
-		      % \item{Developed and released accessibility toolkit as open-source NPM module, with automated version management}
-		      % \item{Revamped core scripts as serverless Firebase Functions to improve availability and maintainability}
-		\item{Developed \textbf{GraphQL} powered serverless API to interface with sites and mobile apps}
-		\item{Created web app using \textbf{React} to provide highly scalable grant administration experiences for \textbf{400+ quarterly applicants}}
-		\item{Built CMS systems to allow for internal team of \textbf{30+ users} to customize website and application dashboard}
-		\item{Used serverless tooling such as \textbf{AWS, Netlify, and Auth0} to deploy and secure apps}
-	\end{itemize}
+\cventry{May 2023 -- Sept 2023}{Cloud Engineering
+Intern}{Manulife}{Waterloo, Ontario, Canada}{}{
+  \begin{itemize}
+    \item Enhanced Terraform testing frameworks in \textbf{Go},
+      increasing test coverage by \textbf{25\%}.
+    \item Scaffolded the ServiceNOW Terraform API in \textbf{Python},
+      enabling detailed cloud cost visibility.
+    \item Collaborated with cross-functional teams using
+      \textbf{Jira} and \textbf{Confluence} to deploy Kubernetes
+      services via \textbf{Jenkins}.
+  \end{itemize}
 }
+\cventry{May 2022 -- Sept 2022}{Software Engineer}{New
+Babel}{Toronto, Ontario, Canada}{}{
+  \begin{itemize}
+    \item Developed a high-performance API with \textbf{NoSQL},
+      serverless functions, and \textbf{Python}, ensuring rapid delivery.
+    \item Collaborated in an \textbf{Agile} team to rapidly prototype features
+    \item Presented technical solutions to \textbf{Fortune 500}
+      clients, gathering feedback to iterate on product offerings.
+  \end{itemize}
+}
+% \cventry{Apr 2020 -- May 2022}{Software
+% Architect}{TakingITGlobal}{Toronto, Ontario, Canada}{}{
+%   \begin{itemize}
+%     \item Released an accessibility toolkit as an open-source
+%       \textbf{NPM} module with a full \textbf{CI/CD} pipeline.
+%     \item Developed a scalable web application using \textbf{React}
+%       and \textbf{GraphQL}, streamlining grant administration for
+%       \textbf{400+ quarterly applicants}.
+%     \item Deployed a self-hosted CMS empowering a team of \textbf{30+
+%       users} to manage content and dashboards effectively.
+%       \item Utilized \textbf{AWS}, \textbf{Netlify}, and
+%       \textbf{Auth0} to deploy and secure serverless applications.
+%   \end{itemize}
+% }
 
 \section{Projects}
-\cventry{Jun 2023 -- Present}{SalesBop}{}{}{}{
-	\url{https://www.salesbop.io}
-	\begin{itemize}
-		\item{Developed full-stack LLM AI sales coaching application using \textbf{React, tRPC, Prisma}}
-		\item{Created multi-cloud, API-driven infrastructure, between internal backends and Rev.ai and OpenAI APIs}
-		\item{Implemented \textbf{QStash} serverless messaging to improve reliability and reduce costs}
-	\end{itemize}
+\cventry{Sept 2024 -- Present}{meetingbot}{}{}{}{
+  \url{https://github.com/meetingbot/meetingbot}
+  \begin{itemize}
+    \item Developed an open-source platform to deploy meeting bots on
+      private infrastructure using \textbf{Terraform}, \textbf{AWS
+      APIs}, and \textbf{Python}, enhancing data privacy and reducing costs.
+    \item Designed cost-efficient infrastructure with
+      \textbf{scale-to-zero} functionality and seamless deployment
+      using \textbf{Docker} and \textbf{Terraform}.
+    \item Collaborated with a team of 6 to build a robust backend
+      that integrates \textbf{NextJS}, \textbf{Puppeteer}, and
+      multi-service support.
+  \end{itemize}
 }
-\cventry{Nov 2022 -- Present}{DeltaHacks Portal and Landing Page}{}{}{}{
-	\url{https://github.com/deltahacks/portal} | \url{https://github.com/deltahacks/landing-10}
-	\begin{itemize}
-		\item{Deployed backend for shared applicant/administration portal, processing \textbf{over 1000 applicants}}
-		      % \item{Delivered features in biweekly sprints with team of 6 other developers}
-		\item{Led team to build a performant, responsive, and modern landing page using \textbf{AstroJS and React}}
-	\end{itemize}
+\cventry{Nov 2022 -- Present}{DeltaHacks}{}{}{}{
+  \url{https://github.com/deltahacks/portal} |
+  \url{https://github.com/deltahacks/landing-11}
+  \begin{itemize}
+    \item Deployed a backend system for a shared
+      applicant/administration portal, managing \textbf{over 1000 applicants}.
+    \item Led a team of 4 to design and build a high-performance,
+      responsive landing page using \textbf{AstroJS} and \textbf{React}.
+  \end{itemize}
 }
 \cventry{Apr 2020 -- Present}{Homelab}{}{}{}{
-	\begin{itemize}
-		% \item{Refurbished rackmount server as a ZFS-based NAS}
-		\item{Deployed \textbf{Docker services} and \textbf{ZFS storage} on a hyperconverged server}
-		\item{Built \textbf{3-node Kubernetes cluster}, deploying Grafana, Prometheus, and other monitoring tools}
-		      % \item{Reconfigured home network infrastructure with VLAN security, and managed Cisco switch over IOS}
-		      % \item{Deployed Home Assistant to collect and analyze home data, reducing heating costs by \textbf{50\%}}
-	\end{itemize}
+  \begin{itemize}
+    \item Deployed and managed \textbf{Docker} containers with
+      \textbf{Docker Compose} on a hyperconverged server with
+      \textbf{ZFS storage}.
+    \item Experimented with \textbf{Kubernetes} (K3S) and Helm,
+      implementing \textbf{Grafana} and \textbf{Prometheus} for
+      system monitoring.
+  \end{itemize}
 }
-\cventry{Fall 2017 -- Summer 2021}{VEX Robotics (Lead Engineer)}{}{}{}{
-	\begin{itemize}
-		\item Led a primary team of \textbf{10 students} to build, design, and maintain robot hardware
-		      % \item Collaborated in an executive team of 4 to recruit, vet, and teach new members
-		      % \item Assisted and taught secondary team of 10 various engineering techniques
-		\item Competed at \textbf{VEX Worlds}, and earned the Innovate award in our division
-	\end{itemize}
+% \cventry{Fall 2017 -- Summer 2021}{VEX Robotics (Lead Engineer)}{}{}{}{
+%   \begin{itemize}
+%     \item Led a primary team of \textbf{10 students} to build,
+%       design, and maintain robot hardware
+%       % \item Collaborated in an executive team of 4 to recruit, vet,
+%       % and teach new members
+%       % \item Assisted and taught secondary team of 10 various
+%       % engineering techniques
+%     \item Competed at \textbf{VEX Worlds}, and earned the Innovate
+%       award in our division
+%   \end{itemize}
 }
 % \cventry{May 2020 -- Jun 2021}{Fraser Votes}{}{}{}{
-% 	\url{https://github.com/Fraser-Votes/}
-% 	\begin{itemize}
-% 		\item{Used Gatsby and Firebase to make online candidate information and voting platform utilizing PGP encryption}
-% 		\item{Increased voter turnout by 165\%}
-% 		\item{Used Plausible and Sentry to monitor aggregate, anonymous information about 1400 unique visitors}
-% 	\end{itemize}
+%   \url{https://github.com/Fraser-Votes/}
+%   \begin{itemize}
+%     \item{Used Gatsby and Firebase to make online candidate
+% information and voting platform utilizing PGP encryption}
+%     \item{Increased voter turnout by 165\%}
+%     \item{Used Plausible and Sentry to monitor aggregate, anonymous
+% information about 1400 unique visitors}
+%   \end{itemize}
 % }
 
 \section{Skills}
-\cvitem{Programming Languages}{C/C++, JavaScript, HTML/CSS, Python, Java, SQL (DB2, MySQL)}
-\cvitem{Tools \& Frameworks}{Linux, Git, Node.js, React, OpenAPI, Docker, Kubernetes, Terraform, GraphQL, Fusion360}
-\cvitem{Platforms \& Services}{GitHub, AWS, GCP, Azure, Vercel, PlanetScale, Jira / Confluence}
-% \cvitem{Areas of Expertise}{Full-stack Web Development, Serverless Architecture, DevOps}
+\cvitem{Programming Languages}{C/C++, JavaScript, HTML/CSS, Python,
+Java, SQL (DB2, MySQL)}
+\cvitem{Tools \& Frameworks}{Linux, Git, Node.js, React, OpenAPI,
+Docker, Kubernetes, Terraform, GraphQL, Fusion360}
+\cvitem{Platforms \& Services}{GitHub, AWS, GCP, Azure, Vercel,
+PlanetScale, Jira / Confluence}
+% \cvitem{Areas of Expertise}{Full-stack Web Development, Serverless
+% Architecture, DevOps}
 
 \end{document}
