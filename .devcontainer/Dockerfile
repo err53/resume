@@ -1,1 +1,1 @@
-FROM qmcgaw/latexdevcontainer
+FROM skrallex/latexdevcontainer
