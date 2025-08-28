@@ -1,177 +1,217 @@
-% !TeX spellcheck = en_US
-\documentclass[10pt, letterpaper, sans]{moderncv}
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
 
-\moderncvstyle{banking}
+\documentclass[letterpaper,11pt]{article}
 
-\moderncvcolor{blue}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
-% font loading
-% for luatex and xetex, do not use inputenc and fontenc
-% see https://tex.stackexchange.com/a/496643
-\ifxetexorluatex
-\usepackage{fontspec}
-\usepackage{unicode-math}
-\defaultfontfeatures{Ligatures=TeX}
-\setmainfont{Latin Modern Roman}
-\setsansfont{Latin Modern Sans}
-\setmonofont{Latin Modern Mono}
-\setmathfont{Latin Modern Math}
-\else
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\fi
 
-\usepackage[scale=0.90]{geometry}
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
 
-\input{config.tex}
-% \title{Resume}
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
-\hypersetup{pdftitle={Jason Huang - Resume}}
 
-\makecvtitle
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-\vspace{-3em}
+\begin{center}
+    \textbf{\Huge \scshape Jason Huang} \\ \vspace{1pt}
+    \small 647-631-6610 $|$ \href{mailto:jasonhuang20035@gmail.com}{\underline{jasonhuang20035@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/jasonhuang03/}{\underline{linkedin.com/in/jasonhuang03}} $|$
+    \href{http://github.com/err53}{\underline{github.com/err53}}
+\end{center}
 
-\section{Skills}
-\cvitem{Languages}{JavaScript, TypeScript, Python, C/C++, Go, SQL, HTML/CSS}
-\cvitem{Frameworks \& Libraries}{React, Next.js, Node.js, GraphQL,
-tRPC, Express, AstroJS, Puppeteer}
-\cvitem{DevOps \& Cloud}{AWS, Terraform, Docker, Kubernetes, GitHub
-Actions, CI/CD, Jenkins}
-\cvitem{Databases \& Tools}{PostgreSQL, NoSQL, MySQL, Vercel,
-Netlify, Linux, Git}
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, Python, Go, SQL (Postgres, MySQL), C/C++, Java, HTML/CSS} \\
+     \textbf{Frameworks/Libraries}{: React, Node.js, NextJS, NumPy, PyTorch} \\
+     \textbf{Developer Tools}{: Git, Linux, Jenkins, GitHub Actions, Figma} \\
+     \textbf{Cloud/Devops}{: Docker, AWS, Terraform, Kubernetes} \\
+    }}
+ \end{itemize}
 
+%-----------EDUCATION-----------
 \section{Education}
-\cventry{2021 -- 2025}{Computer Science Co-op}{McMaster
-University}{Hamilton, Ontario, Canada}{4.0 GPA}{
-  Bachelor of Applied Science
-  \begin{itemize}
-    \item Received
-      Provost's Honour Roll (2021-2022),
-      Deans' Honour List (2021-2024)
-    \item Completed advanced coursework in
-      Databases,
-      Algorithms,
-      Information Security,
-      Operating Systems,
-      Compilers,
-      Machine Learning
-    \item DeltaHacks Tech Exec, VP of Tech - (Nov 2022 -- Present)
-      % \item McMaster Competitive Programming ICPC Competitor (Spring 2023)
-  \end{itemize}
-}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McMaster University}{Hamilton, ON}
+      {Bachelor of Applied Science in Computer Science}{Sept. 2021 - May 2025}
+    \resumeItemListStart
+      \resumeItem{Provost's Honour Roll, Deans' Honour List, \textbf{4.0 GPA}}
+      \resumeItem{Coursework in Databases, Algorithms, Information Security, Operating Systems, Compilers, Machine Learning}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
+
+%-----------EXPERIENCE-----------
 \section{Experience}
-\cventry{Jun 2023 -- Present}{Founder, CTO}{SalesBop}{Hamilton,
-Ontario, Canada}{}{
-  \url{https://www.salesbop.io}
-  \begin{itemize}
-    \item Architected a full-stack application for \textbf{LLM-driven
-      sales call analysis} using \textbf{React and Python},
-      increasing quota attainment by 50\%.
-    \item Designed a \textbf{serverless, scalable infrastructure}
-      with \textbf{Docker and MySQL}, supporting
-      \textbf{500+ concurrent users}.
-    \item Mentored a co-founder on \textbf{React/JS development} and
-      collaborated with stakeholders to define the product roadmap.
-    \item Led backend integration efforts post-acquisition to ensure
-      seamless transition and continued performance.
-  \end{itemize}
-}
-\cventry{May 2024 -- Sept 2024}{Full Stack
-Developer}{Grapl}{Hamilton, Ontario, Canada}{}{
-  \begin{itemize}
-    \item Delivered a scalable full-stack inventory app with
-      \textbf{React (Next.js)}, \textbf{PostgreSQL}, and
-      \textbf{tRPC}.
-    \item Built a frame generation service using \textbf{Python} and
-      \textbf{AWS Lambda}, boosting product capabilities and
-      supporting \textbf{3+ clients}.
-    \item Streamlined deployment pipelines with \textbf{GitHub
-      Actions} CI/CD and \textbf{Terraform}-based IaC, cutting
-      deployment time by \textbf{50\%} and improving developer productivity.
-  \end{itemize}
-}
-\cventry{May 2023 -- Sept 2023}{Cloud Engineering
-Intern}{Manulife}{Waterloo, Ontario, Canada}{}{
-  \begin{itemize}
-    \item Enhanced Terraform testing frameworks in \textbf{Go},
-      increasing test coverage by \textbf{25\%} and detecting
-      \textbf{100+ untested statements} before production.
-    \item Scaffolded the ServiceNOW Terraform API in \textbf{Python},
-      enabling detailed cloud cost visibility across \textbf{50+ services}.
-    \item Collaborated with cross-functional teams using
-      \textbf{Jira} and \textbf{Confluence} to deploy \textbf{Kubernetes
-      services} via \textbf{Jenkins}, supporting enterprise-scale applications.
-  \end{itemize}
-}
-\cventry{May 2022 -- Sept 2022}{Software Engineer}{New
-Babel}{Toronto, Ontario, Canada}{}{
-  \begin{itemize}
-    \item Developed a high-performance API with \textbf{NoSQL},
-      serverless functions, and \textbf{Python}, ensuring rapid
-      delivery with \textbf{sub-100ms response times}.
-      % \item Collaborated in an \textbf{Agile} team to rapidly prototype
-      %   features, delivering \textbf{2-week sprint cycles} consistently.
-    \item Presented technical solutions to \textbf{Fortune 500}
-      clients, gathering feedback to iterate on product offerings.
-  \end{itemize}
-}
-% \cventry{Apr 2020 -- May 2022}{Software
-% Architect}{TakingITGlobal}{Toronto, Ontario, Canada}{}{
-%   \begin{itemize}
-%     \item Released an accessibility toolkit as an open-source
-%       \textbf{NPM} module with a full \textbf{CI/CD} pipeline.
-%     \item Developed a scalable web application using \textbf{React}
-%       and \textbf{GraphQL}, streamlining grant administration for
-%       \textbf{400+ quarterly applicants}.
-%     \item Deployed a self-hosted CMS empowering a team of \textbf{30+
-%       users} to manage content and dashboards effectively.
-%     \item Utilized \textbf{AWS}, \textbf{Netlify}, and \textbf{Auth0}
-%       to deploy and secure serverless applications, achieving
-%       \textbf{99.9\%} uptime.
-%   \end{itemize}
-% }
+  \resumeSubHeadingListStart
 
+    \resumeSubheading
+        {Founding Engineer}{June 2023 -- June 2025}
+        {SalesBop}{Hamilton, ON}
+        \resumeItemListStart
+            \resumeItem{Built a full-stack application with \textbf{React}, \textbf{Python}, and \textbf{Docker} to perform sales call analysis with LLMs}
+            \resumeItem{Led backend integration efforts post-acquisition to onboard \textbf{20+ clients}}
+            \resumeItem{Onboarded new developers to the team and developed documentation for knowledge transfer}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {Full Stack Developer}{May 2024 -- Sep. 2024}
+        {Grapl}{Hamilton, ON}
+        \resumeItemListStart
+           \resumeItem{Delivered a full-stack app with \textbf{React}, \textbf{AWS}, and \textbf{Terraform} to manage inventory and visualize structural blueprints}
+           \resumeItem{Built an automated housing frame generation service with \textbf{Python}, ensuring consistent framing layouts that comply with Ontario Building Code standards}
+           \resumeItem{Supported \textbf{3+ client companies} with developed dashboard and manufacturing processes}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {Cloud Engineering Intern}{May 2023 -- Sep. 2023}
+        {Manulife}{Waterloo, ON}
+        \resumeItemListStart
+            \resumeItem{Enhanced \textbf{Terraform} testing frameworks written in \textbf{Go}, increasing test coverage by \textbf{25\%}}
+            \resumeItem{Deployed a ServiceNOW Terraform API with \textbf{Python} and \textbf{NGINX}, orchestrated with \textbf{Kubernetes}}
+            \resumeItem{Collaborated with team to improve onboarding experience, documentation, and accelerate code review}
+        \resumeItemListEnd
+    \resumeSubheading
+        {Software Engineer}{May 2022 -- Sep. 2022}
+        {Hop}{Toronto, ON}
+        \resumeItemListStart
+            \resumeItem{Developed high-performance API using \textbf{DynamoDB}, \textbf{Lambda}, and \textbf{Python}, ensuring \textbf{sub-100ms response times}}
+            \resumeItem{Presented to \textbf{Fortune 500} clients including RBC, gathering feedback to iterate on product offerings}
+        \resumeItemListEnd    
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
 \section{Projects}
-\cventry{Sept 2024 -- May 2025}{meetingbot}{}{}{}{
-  \url{https://github.com/meetingbot/meetingbot}
-  \begin{itemize}
-    \item Developed an open-source platform to deploy meeting bots on
-      private infrastructure using \textbf{Terraform}, \textbf{AWS
-      APIs}, and \textbf{Python}, enhancing data privacy and reducing
-      costs by \textbf{10x}.
-    \item Designed cost-efficient infrastructure with
-      \textbf{scale-to-zero} functionality and seamless deployment
-      using \textbf{Docker} and \textbf{Terraform}.
-    \item Collaborated with a team of 6 to build and deploy the project,
-      and grow a community of \textbf{50+ interested developers} and
-      \textbf{5+ interested companies}.
-  \end{itemize}
-}
-\cventry{Nov 2022 -- May 2025}{DeltaHacks}{}{}{}{
-  \url{https://github.com/deltahacks/portal} |
-  \url{https://github.com/deltahacks/landing-11}
-  \begin{itemize}
-    \item Deployed a backend system for a shared
-      applicant/administration portal, managing \textbf{over 1000
-      applicants} with \textbf{99.9\%} system reliability.
-    \item Led a team of 4 to design and build a high-performance,
-      responsive landing page using \textbf{AstroJS} and
-      \textbf{React}, achieving \textbf{95+} Lighthouse score.
-  \end{itemize}
-}
-% \cventry{Apr 2020 -- Present}{Homelab}{}{}{}{
-%   \begin{itemize}
-%     \item Deployed and managed \textbf{20+ Docker} containers with
-%       \textbf{Docker Compose} on a hyperconverged server with
-%       \textbf{ZFS storage}, achieving \textbf{99.8\%} uptime.
-%     \item Experimented with \textbf{Kubernetes} (K3S) and Helm,
-%       implementing \textbf{Grafana} and \textbf{Prometheus} for
-%       system monitoring across \textbf{5 nodes}.
-%   \end{itemize}
-% }
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{meetingbot} $|$ \emph{React, NodeJS, Terraform, AWS, PostgreSQL, Docker}}{Sep. 2024 -- May 2025}
+        \resumeItemListStart
+            \resumeItem{Developed an open-source meeting bot hosting platform with \textbf{NextJS} and \textbf{Puppeteer}, deployed on \textbf{AWS} with \textbf{Terraform}}
+            \resumeItem{Conducted user research with \textbf{5+ companies} to validate product-market fit}
+            \resumeItem{Collaborated with 4 other students and grew a community of \textbf{100+ developers}}
+        \resumeItemListEnd
 
+        \resumeProjectHeading
+            {\textbf{DeltaHacks} $|$ \emph{React, AstroJS, PostgreSQL, Netlify}}{Nov. 2022 -- May 2025}
+        \resumeItemListStart
+            \resumeItem{Deployed a backend system for a shared applicant/administration portal, managing \textbf{over 1000 applicants}.}
+            \resumeItem{\textbf{Led team of 4} to design and build a high-performance, responsive landing page using \textbf{AstroJS} and \textbf{React}.}
+            \resumeItem{Collaborated with senior leadership to define objectives and communicate project progress.}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+            {\textbf{Homelab} $|$ \emph{Docker, Linux, Kubernetes, Terraform}} {Apr. 2020 -- Present}
+        \resumeItemListStart
+            \resumeItem{Deployed \textbf{Docker} containers with shared \textbf{ZFS} storage served over \textbf{NFS}}
+            \resumeItem{Prototyped 3-node \textbf{Kubernetes} clusters with \textbf{Helm}, running Grafana and Prometheus}
+            \resumeItem{Deployed local LLM inference with \textbf{Ollama}, experimenting with model performance and resource optimization on consumer hardware}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
 \end{document}
