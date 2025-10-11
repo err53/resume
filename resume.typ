@@ -51,7 +51,7 @@
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-- Cumulative GPA: 4.0\/4.0 | Provost’s Honour Roll, Deans’ Honour List
+- Cumulative GPA: 4.0\/4.0 | Provost's Honour Roll, Deans' Honour List
 - Relevant Coursework: Data Structures, Algorithms, Linear Algebra, Discrete Mathematics, Databases, Operating Systems, Cryptography, Compilers, Machine Learning, Natural Language Processing
 
 == Work Experience
@@ -102,7 +102,7 @@
   // Role is optional
   // role: "Maintainer",
   // Dates is optional
-  dates: dates-helper(start-date: "Sep 2023", end-date: "May 2025"),
+  dates: dates-helper(start-date: "Sep 2024", end-date: "May 2025"),
   // URL is also optional
   url: "meetingbot.tech",
 )
