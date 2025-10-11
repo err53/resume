@@ -1,9 +1,6 @@
-name: Build LaTeX document
+name: Render document
 on:
   push:
-    paths:
-      - '**.yml'
-      - '**.tex'
   workflow_dispatch:
 
 permissions:
@@ -12,17 +9,14 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  render:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v3
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: resume.tex
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v4
+      - run: typst compile resume.typ resume.pdf
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: .
   deploy:
@@ -30,8 +24,5 @@ jobs:
     needs: [build]
     if: github.ref == 'refs/heads/main'
     steps:
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/deploy-pages@v4
