@@ -5,7 +5,7 @@
 #let location = "Toronto, ON"
 #let email = "jasonhuang20035@gmail.com"
 #let github = "github.com/err53"
-#let linkedin = "linkedin.com/in/jasonhuang03"
+#let linkedin = "linkedin.com/in/jhuang03"
 #let phone = "+1 (xxx) xxx-xxxx"
 #let personal-site = "jhuang.dev"
 
