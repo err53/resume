@@ -40,20 +40,6 @@
 * #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
 * #generic-one-by-two(left: "", right: "")
 */
-== Education
-
-#edu(
-  institution: "McMaster University",
-  location: "Hamilton, ON",
-  dates: dates-helper(start-date: "Sep 2021", end-date: "Jun 2025"),
-  degree: "Bachelor's of Applied Science, Computer Science",
-
-  // Uncomment the line below if you want edu formatting to be consistent with everything else
-  // consistent: true
-)
-- Cumulative GPA: 4.0\/4.0 | Provost's Honour Roll, Deans' Honour List
-- Relevant Coursework: Data Structures, Algorithms, Linear Algebra, Discrete Mathematics, Databases, Operating Systems, Cryptography, Compilers, Machine Learning, Natural Language Processing
-
 == Work Experience
 
 #work(
@@ -123,36 +109,30 @@
 - *Led team of 4* to design and build a high-performance, responsive landing page using *AstroJS* and *React*
 - Collaborated with senior leadership to define objectives and communicate project progress
 
-== Extracurricular Activities
-
-#extracurriculars(
-  activity: "Homelab",
+#project(
+  name: "Homelab",
+  // Role is optional
+  // role: "Maintainer",
+  // Dates is optional
   dates: dates-helper(start-date: "Apr 2020", end-date: "Present"),
+  // URL is also optional
+  // url: "example.com",
 )
 - Deployed a 3-node *Kubernetes* cluster using *Helm* and *Docker*, backed by *ZFS storage* on enterprise hardware
 
+== Education
 
-// #extracurriculars(
-//   activity: "Capture The Flag Competitions",
-//   dates: dates-helper(start-date: "Jan 2021", end-date: "Present"),
-// )
-// - Founder of Les Amateurs (#link("https://amateurs.team")[amateurs.team]), currently ranked \#4 US, \#33 global on CTFTime (2023: \#4 US, \#42 global)
-// - Organized AmateursCTF 2023 and 2024, with 1000+ teams solving at least one challenge and \$2000+ in cash prizes
-//   - Scaled infrastructure using GCP, Digital Ocean with Kubernetes and Docker; deployed custom software on fly.io
-// - Qualified for DEFCON CTF 32 and CSAW CTF 2023, two of the most prestigious cybersecurity competitions globally
+#edu(
+  institution: "McMaster University",
+  location: "Hamilton, ON",
+  dates: dates-helper(start-date: "Sep 2021", end-date: "Jun 2025"),
+  degree: "Bachelor's of Applied Science, Computer Science",
 
-// #extracurriculars(
-//   activity: "Science Olympiad Volunteering",
-//   dates: "Sep 2023 --- Present"
-// )
-// - Volunteer and write tests for tournaments, including LA Regionals and SoCal State \@ Caltech
-
-// #certificates(
-//   name: "OSCP",
-//   issuer: "Offensive Security",
-//   // url: "",
-//   date: "Oct 2024",
-// )
+  // Uncomment the line below if you want edu formatting to be consistent with everything else
+  // consistent: true
+)
+- Cumulative GPA: 4.0\/4.0 | Provost's Honour Roll, Deans' Honour List
+- Relevant Coursework: Data Structures, Algorithms, Linear Algebra, Discrete Mathematics, Databases, Operating Systems, Cryptography, Compilers, Machine Learning, Natural Language Processing
 
 == Skills
 - *Programming Languages*: Python, JavaScript, Go, SQL (Postgres, MySQL), C/C++, Java, HTML/CSS
