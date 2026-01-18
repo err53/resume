@@ -43,14 +43,23 @@
 == Work Experience
 
 #work(
-  title: "Technical Founder",
+  title: "Software Engineer",
+  location: "Toronto, ON",
+  company: "Voleon",
+  dates: dates-helper(start-date: "Nov 2025", end-date: "Present"),
+)
+- Automated reporting for institutional investors using *Airflow* and *Python*
+
+#work(
+  title: "Co-Founder",
   location: "Hamilton, ON",
   company: "SalesBop",
   dates: dates-helper(start-date: "Jun 2023", end-date: "Jun 2025"),
 )
 - Built a full-stack application with *React*, *Python*, and *Docker* to perform sales call analysis with LLMs
+- Collaborated with prospects to set performance and security targets, including *SOC2 certification*
 - Led backend integration efforts post-acquisition to onboard *20+ clients*
-- Onboarded new developers to the team and developed documentation for knowledge transfer
+- Onboarded new developers to the team and created documentation for knowledge transfer
 
 #work(
   title: "Full Stack Developer",
@@ -59,8 +68,7 @@
   dates: dates-helper(start-date: "May 2024", end-date: "Sep 2024"),
 )
 - Delivered a full-stack app with *React*, *AWS*, and *Terraform* to manage inventory and visualize structural blueprints
-- Built an automated housing frame generation service with *Python*, ensuring consistent framing layouts that comply with Ontario Building Code standards
-- Supported *3+ client companies*, providing visibility through dashboards
+- Built an automated residential building frame generation service with *Python*, compliant with the Ontario Building Code
 
 #work(
   title: "Cloud Engineering Intern",
@@ -69,7 +77,6 @@
   dates: dates-helper(start-date: "May 2023", end-date: "Sep 2023"),
 )
 - Enhanced *Terraform* testing frameworks written in *Go*, increasing test coverage by *25\%*
-- Deployed a ServiceNOW Terraform API with *Python* and *NGINX*, orchestrated with *Kubernetes*
 - Collaborated with team to improve onboarding experience, documentation, and accelerate code review
 
 #work(
@@ -107,7 +114,6 @@
 )
 - Deployed a backend system for a shared applicant/administration portal, managing *over 1000 applicants*
 - *Led team of 4* to design and build a high-performance, responsive landing page using *AstroJS* and *React*
-- Collaborated with senior leadership to define objectives and communicate project progress
 
 #project(
   name: "Homelab",
@@ -119,6 +125,7 @@
   // url: "example.com",
 )
 - Deployed a 3-node *Kubernetes* cluster using *Helm* and *Docker*, backed by *ZFS storage* on enterprise hardware
+- Secured self-hosted services using *Wireguard* tunneling and *OIDC* authentication/authorization
 
 == Education
 
@@ -126,15 +133,15 @@
   institution: "McMaster University",
   location: "Hamilton, ON",
   dates: dates-helper(start-date: "Sep 2021", end-date: "Jun 2025"),
-  degree: "Bachelor's of Applied Science, Computer Science",
+  degree: "Bachelor's of Applied Science, Honours Computer Science (Co-Op)",
 
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
 - Cumulative GPA: 4.0\/4.0 | Provost's Honour Roll, Deans' Honour List
-- Relevant Coursework: Data Structures, Algorithms, Linear Algebra, Discrete Mathematics, Databases, Operating Systems, Cryptography, Compilers, Machine Learning, Natural Language Processing
+- Relevant Coursework: Data Structures, Algorithms, Linear Algebra, Discrete Mathematics, Databases, Operating Systems, Cryptography, Compilers, Machine Learning, Natural Language Processing, Quantum Informatics
 
 == Skills
 - *Programming Languages*: Python, JavaScript, Go, SQL (Postgres, MySQL), C/C++, Java, HTML/CSS
-- *Frameworks & Tools*: React, Next.js, Node.js, PyTorch, NumPy, Git, Linux, Figma
-- *Cloud/DevOps*: AWS, Docker, Kubernetes, Terraform, GCP, GitHub Actions, Jenkins, 
+- *Frameworks & Tools*: React, Node.js, NumPy, PyTorch, Git, Linux, Figma
+- *Cloud/DevOps*: AWS, Docker, Kubernetes, Terraform, Airflow, Jenkins, GCP, Azure, GitHub Actions
