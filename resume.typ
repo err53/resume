@@ -51,13 +51,13 @@
 - Automated reporting for institutional investors using *Airflow* and *Python*
 
 #work(
-  title: "Co-Founder",
+  title: "Co-Founder & CTO (Part-time)",
   location: "Hamilton, ON",
   company: "SalesBop",
   dates: dates-helper(start-date: "Jun 2023", end-date: "Jun 2025"),
 )
 - Built a full-stack application with *React*, *Python*, and *Docker* to perform sales call analysis with LLMs
-- Collaborated with prospects to set performance and security targets, including *SOC2 certification*
+- Collaborated with prospects to set performance and security targets, including *SOC 2 readiness*
 - Led backend integration efforts post-acquisition to onboard *20+ clients*
 - Onboarded new developers to the team and created documentation for knowledge transfer
 
@@ -77,7 +77,7 @@
   dates: dates-helper(start-date: "May 2023", end-date: "Sep 2023"),
 )
 - Enhanced *Terraform* testing frameworks written in *Go*, increasing test coverage by *25\%*
-- Collaborated with team to improve onboarding experience, documentation, and accelerate code review
+- Collaborated with the team to improve onboarding experience, documentation, and accelerate code review
 
 #work(
   title: "Software Engineer",
@@ -85,7 +85,7 @@
   company: "Hop",
   dates: dates-helper(start-date: "May 2022", end-date: "Sep 2022"),
 )
-- Developed performant *REST API* using *DynamoDB*, *Lambda*, and *Python*
+- Developed a highly scalable *REST API* using *DynamoDB*, *AWS Lambda*, and *Python*
 - Presented to *Fortune 500* clients including RBC, gathering feedback to iterate on product offerings
 
 == Projects
@@ -99,7 +99,7 @@
   // URL is also optional
   url: "meetingbot.tech",
 )
-- Developed an open-source meeting bot hosting platform with *NextJS* and *Puppeteer*, deployed on *AWS* with *Terraform*
+- Developed an open-source meeting bot hosting platform with *Next.js* and *Puppeteer*, deployed on *AWS* with *Terraform*
 - Conducted user research with *5+ companies* to validate product-market fit
 - Collaborated with 4 other students and grew a community of *100+ developers*
 
@@ -113,7 +113,7 @@
   url: "github.com/deltahacks",
 )
 - Deployed a backend system for a shared applicant/administration portal, managing *over 1000 applicants*
-- *Led team of 4* to design and build a high-performance, responsive landing page using *AstroJS* and *React*
+- *Led team of 4* to design and build a high-performance, responsive landing page using *Astro* and *React*
 
 #project(
   name: "Homelab",
@@ -125,7 +125,7 @@
   // url: "example.com",
 )
 - Deployed a 3-node *Kubernetes* cluster using *Helm* and *Docker*, backed by *ZFS storage* on enterprise hardware
-- Secured self-hosted services using *Wireguard* tunneling and *OIDC* authentication/authorization
+- Secured self-hosted services using *WireGuard* tunneling and *OIDC* authentication/authorization
 
 == Education
 
@@ -142,6 +142,6 @@
 // - Relevant Coursework: Data Structures, Algorithms, Linear Algebra, Discrete Mathematics, Databases, Operating Systems, Cryptography, Compilers, Machine Learning, Natural Language Processing, Quantum Informatics
 
 == Skills
-- *Programming Languages*: Python, JavaScript, Go, SQL (Postgres, MySQL), C/C++, Java, HTML/CSS
+- *Programming Languages*: Python, JavaScript, Go, SQL (PostgreSQL, MySQL), C/C++, Java, HTML/CSS
 - *Frameworks & Tools*: React, Node.js, NumPy, PyTorch, Git, Linux, Figma
 - *Cloud/DevOps*: AWS, Docker, Kubernetes, Terraform, Airflow, Jenkins, GCP, Azure, GitHub Actions
