@@ -133,13 +133,13 @@
   institution: "McMaster University",
   location: "Hamilton, ON",
   dates: dates-helper(start-date: "Sep 2021", end-date: "Jun 2025"),
-  degree: "Bachelor's of Applied Science, Honours Computer Science (Co-Op)",
+  degree: "Bachelor of Applied Science, Honours Computer Science, Co-Op",
 
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-- Cumulative GPA: 4.0\/4.0 | Provost's Honour Roll, Deans' Honour List
-- Relevant Coursework: Data Structures, Algorithms, Linear Algebra, Discrete Mathematics, Databases, Operating Systems, Cryptography, Compilers, Machine Learning, Natural Language Processing, Quantum Informatics
+- GPA: 4.0\/4.0 | Provost Honour Roll, Deans' Honour List
+// - Relevant Coursework: Data Structures, Algorithms, Linear Algebra, Discrete Mathematics, Databases, Operating Systems, Cryptography, Compilers, Machine Learning, Natural Language Processing, Quantum Informatics
 
 == Skills
 - *Programming Languages*: Python, JavaScript, Go, SQL (Postgres, MySQL), C/C++, Java, HTML/CSS
