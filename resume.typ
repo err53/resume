@@ -49,6 +49,8 @@
   dates: dates-helper(start-date: "Nov 2025", end-date: "Present"),
 )
 - Automated reporting for institutional investors using *Airflow* and *Python*
+- Developed interest accrual ingestion pipeline for accounting teams, allowing for automated reconciliation of interest accounts
+- Architected data warehouse models and UI for the compliance team's observability platform
 
 #work(
   title: "Co-Founder & CTO (Part-time)",
