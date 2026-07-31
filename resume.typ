@@ -49,7 +49,7 @@
   dates: dates-helper(start-date: "Nov 2025", end-date: "Present"),
 )
 - Automated reporting for institutional investors using _Airflow_ and _Python_, reducing reporting time by *2+ hours weekly*.
-- Automated daily reconciliation for *15+ interest accounts* through a new ingestion pipeline.
+- Automated daily reconciliation for *15+ fund accounts* through a new ingestion pipeline.
 - Centralized compliance observability across *8+ reports* through new warehouse models and investigation UI.
 
 // #work(
@@ -96,7 +96,7 @@
   company: "Hop",
   dates: dates-helper(start-date: "May 2022", end-date: "Sep 2022")
 )
-- Developed a highly scalable REST API using _Python_, _AWS Lambda_, and _DynamoDB_
+- Developed a highly scalable REST API using _Python_, _AWS Lambda_, and _DynamoDB_.
 - Improved product-market fit based on feedback from *Fortune 500 clients*, including RBC.
 
 // #work(
