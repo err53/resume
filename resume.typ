@@ -48,9 +48,19 @@
   company: "Voleon",
   dates: dates-helper(start-date: "Nov 2025", end-date: "Present"),
 )
-- Automated reporting for institutional investors using *Airflow* and *Python*
-- Developed interest accrual ingestion pipeline for accounting teams, allowing for automated reconciliation of interest accounts
-- Architected data warehouse models and UI for the compliance team's observability platform
+- Automated reporting for institutional investors using _Airflow_ and _Python_, reducing reporting time by *2+ hours weekly*.
+- Automated daily reconciliation for *15+ interest accounts* through a new ingestion pipeline.
+- Centralized compliance observability across *8+ reports* through new warehouse models and investigation UI.
+
+// #work(
+//   title: "Software Engineer (Contract)",
+//   location: "Toronto, ON",
+//   company: "Hop",
+//   dates: [
+//     #dates-helper(start-date: "May 2025", end-date: "Sep 2025")
+//   ],
+// )
+// - Delivered a stealth AR MVP spanning a _Swift_ iOS app and _Node.js_ REST backend.
 
 #work(
   title: "Co-Founder & CTO (Part-time)",
@@ -58,10 +68,9 @@
   company: "SalesBop",
   dates: dates-helper(start-date: "Jun 2023", end-date: "Jun 2025"),
 )
-- Built a full-stack application with *React*, *Python*, and *Docker* to perform sales call analysis with LLMs
-- Collaborated with prospects to set performance and security targets, including *SOC 2 readiness*
-- Led backend integration efforts post-acquisition to onboard *20+ clients*
-- Onboarded new developers to the team and created documentation for knowledge transfer
+- Took an LLM-powered sales-call analysis platform from concept through acquisition.
+- Led backend integration efforts post-acquisition to onboard *20+ clients*.
+- Converted feedback from *5+ prospects* into performance and security controls supporting _SOC 2 readiness_.
 
 #work(
   title: "Full Stack Developer",
@@ -69,8 +78,8 @@
   company: "Grapl",
   dates: dates-helper(start-date: "May 2024", end-date: "Sep 2024"),
 )
-- Delivered a full-stack app with *React*, *AWS*, and *Terraform* to manage inventory and visualize structural blueprints
-- Built an automated residential building frame generation service with *Python*, compliant with the Ontario Building Code
+- Gave *3+ construction companies* visibility into inventory and structural blueprints through dashboards built with _React_ and deployed on _AWS_ and _Terraform_.
+- Automated generation of Ontario Building Code-compliant framing layouts with _Python_, enabling hands-off generation from Revit models to framed-wall designs.
 
 #work(
   title: "Cloud Engineering Intern",
@@ -78,17 +87,26 @@
   company: "Manulife",
   dates: dates-helper(start-date: "May 2023", end-date: "Sep 2023"),
 )
-- Enhanced *Terraform* testing frameworks written in *Go*, increasing test coverage by *25\%*
-- Collaborated with the team to improve onboarding experience, documentation, and accelerate code review
+- Increased test coverage by *25%* by extending _Go_-based testing frameworks for _Terraform_.
+- Enabled ServiceNow-driven infrastructure provisioning by deploying a _Python_ and _NGINX_ Terraform API on _Kubernetes_.
 
 #work(
   title: "Software Engineer",
   location: "Toronto, ON",
   company: "Hop",
-  dates: dates-helper(start-date: "May 2022", end-date: "Sep 2022"),
+  dates: dates-helper(start-date: "May 2022", end-date: "Sep 2022")
 )
-- Developed a highly scalable *REST API* using *DynamoDB*, *AWS Lambda*, and *Python*
-- Presented to *Fortune 500* clients including RBC, gathering feedback to iterate on product offerings
+- Developed a highly scalable REST API using _Python_, _AWS Lambda_, and _DynamoDB_
+- Improved product-market fit based on feedback from *Fortune 500 clients*, including RBC.
+
+// #work(
+//   title: "Full-Stack Developer (Contract)",
+//   location: "Toronto, ON",
+//   company: "TakingITGlobal",
+//   dates: dates-helper(start-date: "Apr 2020", end-date: "Apr 2022"),
+// )
+// - Improved Rising Youth site performance by *8x*, supporting grant administration for *400+ quarterly applicants*.
+// - Enabled *30+ internal users* to manage web and application content through self-service CMS workflows.
 
 == Projects
 
@@ -101,9 +119,8 @@
   // URL is also optional
   url: "meetingbot.tech",
 )
-- Developed an open-source meeting bot hosting platform with *Next.js* and *Puppeteer*, deployed on *AWS* with *Terraform*
-- Conducted user research with *5+ companies* to validate product-market fit
-- Collaborated with 4 other students and grew a community of *100+ developers*
+- Validated demand with *5+ companies* for a self-hosted meeting-bot platform built with _Next.js_ and _Puppeteer_.
+- Grew meetingbot to a community of *100+ developers* while working with a five-person student team.
 
 #project(
   name: "DeltaHacks",
@@ -114,20 +131,8 @@
   // URL is also optional
   url: "github.com/deltahacks",
 )
-- Deployed a backend system for a shared applicant/administration portal, managing *over 1000 applicants*
-- *Led team of 4* to design and build a high-performance, responsive landing page using *Astro* and *React*
-
-#project(
-  name: "Homelab",
-  // Role is optional
-  // role: "Maintainer",
-  // Dates is optional
-  dates: dates-helper(start-date: "Apr 2020", end-date: "Present"),
-  // URL is also optional
-  // url: "example.com",
-)
-- Deployed a 3-node *Kubernetes* cluster using *Helm* and *Docker*, backed by *ZFS storage* on enterprise hardware
-- Secured self-hosted services using *WireGuard* tunneling and *OIDC* authentication/authorization
+- Centralized application review for *1,000+ DeltaHacks applicants* through a shared applicant and administration portal.
+- Led a four-person team to deliver DeltaHacks' _Astro_ and _React_ event site, achieving a *97 PageSpeed performance score*.
 
 == Education
 
