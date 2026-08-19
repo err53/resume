@@ -19,19 +19,16 @@ jobs:
       - uses: actions/configure-pages@v5
       - run: typst compile resume.typ resume.pdf
       - name: Publish PDF release
+        uses: softprops/action-gh-release@v3
         if: github.ref == 'refs/heads/main'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          tag="resume-${GITHUB_SHA::7}"
-          if ! gh release view "$tag" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
-            gh release create "$tag" resume.pdf \
-              --repo "$GITHUB_REPOSITORY" \
-              --target "$GITHUB_SHA" \
-              --title "Resume ${GITHUB_SHA::7}" \
-              --notes "Automatically built from commit ${GITHUB_SHA}." \
-              --latest
-          fi
+        with:
+          tag_name: resume-${{ github.run_number }}
+          name: Resume ${{ github.run_number }}
+          body: Automatically built from commit ${{ github.sha }}.
+          target_commitish: ${{ github.sha }}
+          files: resume.pdf
+          fail_on_unmatched_files: true
+          make_latest: true
       - uses: actions/upload-pages-artifact@v4
         with:
           path: .
