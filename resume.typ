@@ -46,11 +46,11 @@
   title: "Software Engineer",
   location: "Toronto, ON",
   company: "Voleon",
-  dates: dates-helper(start-date: "Nov 2025", end-date: "Present"),
+  dates: dates-helper(start-date: "Nov 2025", end-date: "Nov 2026"),
 )
-- Automated reporting for institutional investors using _Airflow_ and _Python_, reducing reporting time by *2+ hours weekly*.
-- Automated daily reconciliation for *15+ fund accounts* through a new ingestion pipeline.
-- Centralized compliance observability across *8+ reports* through new warehouse models and investigation UI.
+- Analyzed and automated institutional-investor reporting with _Airflow_ and _Python_, reducing reporting time by *2+ hours weekly*.
+- Designed a new ingestion pipeline that automated daily reconciliation across *15+ fund accounts*.
+- Centralized compliance observability across *8+ reports* through new warehouse models and an investigation UI.
 
 // #work(
 //   title: "Software Engineer (Contract)",
@@ -140,7 +140,7 @@
   institution: "McMaster University",
   location: "Hamilton, ON",
   dates: dates-helper(start-date: "Sep 2021", end-date: "Jun 2025"),
-  degree: "Bachelor of Applied Science, Honours Computer Science, Co-Op",
+  degree: "BASc (Honours) Computer Science Co-op, with Distinction",
 
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
